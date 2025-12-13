@@ -12,7 +12,7 @@
 
 - My background is primarily self-taught, supported by various structured courses that helped establish a solid technical foundation. 
 
-- I’m currently exploring both the **Gemini CLI** and **Claude Code**, because broadening one’s tooling ecosystem tends to accelerate both capability and confusion in equal measure.
+- I’m currently exploring **AI-Native Development** and **Claude Code**, because broadening one’s tooling ecosystem tends to accelerate both capability and confusion in equal measure.
 
 ---
 
