@@ -1,5 +1,5 @@
 <p align="center">
-  <strong style="font-size: 44px;">"When in doubt, go flat out."</strong><br>
+  <strong style="font-size: 40px;">"When in doubt, go flat out."</strong><br>
   <em>- Colin McRae</em>
 </p>
 
@@ -77,3 +77,13 @@ For inquiries or collaboration, feel free to reach out through the following cha
 </a>
 
 </p>
+
+---
+
+# Stats
+
+<div style="text-align: center">
+  <!-- <img src="https://github-readme-stats.vercel.app/api?username=Rayder-23&theme=midnight-purple&hide_border=true&include_all_commits=false&count_private=true"><br/>   -->
+  <img src="https://nirzak-streak-stats.vercel.app/?user=Rayder-23&theme=midnight-purple&hide_border=true"><br/>
+  <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rayder-23&theme=midnight-purple&hide_border=true&include_all_commits=false&count_private=true&layout=compact"> -->
+</div>
