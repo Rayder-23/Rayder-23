@@ -33,6 +33,8 @@ Grouped by category. Icons include hover titles for anyone unfamiliar with their
 &nbsp;&nbsp;
 <img title="Vercel" src="assets/icons/vercel.svg" width="42" />
 &nbsp;&nbsp;
+<img title="Flutter" src="assets/icons/flutter.svg" width="42" />
+&nbsp;&nbsp;
 <img title=".NET" src="assets/icons/dotnet.svg" width="42" />
 &nbsp;&nbsp;
 <img title="GitHub" src="assets/icons/github-dark.svg" width="42" />
@@ -56,10 +58,6 @@ Grouped by category. Icons include hover titles for anyone unfamiliar with their
 <img title="NeonDB" src="assets/icons/neon.svg" width="42" />
 </p>
 
-![Mobile](https://img.shields.io/badge/Mobile-7C3AED?style=for-the-badge)
-<p align="left">
-<img title="Flutter" src="assets/icons/flutter.svg" width="42" />
-</p>
 
 ![AI & Data](https://img.shields.io/badge/AI%20%26%20Data-7C3AED?style=for-the-badge)
 <p align="left">
