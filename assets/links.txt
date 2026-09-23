@@ -1,5 +1,12 @@
-Icons site:
+- Icons site:
 https://dashboardicons.com
 
-Capsule Render:
+- Capsule Render:
 https://capsule-render.vercel.app
+
+- Gitsnk:
+https://github.com/Platane/snk
+https://platane.github.io/snk/
+
+- 3d gitcontrib:
+https://github.com/yoshi389111/github-profile-3d-contrib
