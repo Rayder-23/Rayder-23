@@ -1,8 +1,12 @@
-<svg viewBox="0 0 1200 4" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="divider">
+<svg viewBox="0 0 1200 7" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="divider">
   <style>
     .track { fill: url(#lineGrad); }
     @media (prefers-color-scheme: dark) {
       .track { fill: url(#lineGradDark); }
+    }
+    .sweep { fill: url(#sweepGrad); }
+    @media (prefers-color-scheme: dark) {
+      .sweep { fill: url(#sweepGradDark); }
     }
   </style>
   <defs>
@@ -10,31 +14,53 @@
       <stop offset="0%" stop-color="#7C3AED"/>
       <stop offset="50%" stop-color="#C084FC"/>
       <stop offset="100%" stop-color="#7C3AED"/>
-      <animateTransform attributeName="gradientTransform" type="translate"
-        from="-1 0" to="1 0" dur="4s" repeatCount="indefinite"/>
     </linearGradient>
     <linearGradient id="lineGradDark" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#5B21B6"/>
       <stop offset="50%" stop-color="#9333EA"/>
       <stop offset="100%" stop-color="#5B21B6"/>
-      <animateTransform attributeName="gradientTransform" type="translate"
-        from="-1 0" to="1 0" dur="4s" repeatCount="indefinite"/>
     </linearGradient>
+
+    <!-- traveling highlight streak, much more visible than a gradient-position shift -->
+    <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sweepGradDark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E9D5FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#E9D5FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#E9D5FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="1.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
-  <rect class="track" x="0" y="0" width="1200" height="4"/>
+  <rect class="track" x="0" y="0" width="1200" height="7"/>
 
-  <!-- small nod to data science: pulsing "nodes" along the wire -->
-  <circle cx="240" cy="2" r="1.3" fill="#FFFFFF">
-    <animate attributeName="r" values="1.3;2.2;1.3" dur="2.6s" repeatCount="indefinite"/>
+  <!-- traveling light sweep across the whole bar -->
+  <rect class="sweep" x="-300" y="0" width="300" height="7">
+    <animateTransform attributeName="transform" type="translate"
+      from="0 0" to="1500 0" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- glowing pulse nodes, data-science nod -->
+  <circle cx="240" cy="3.5" r="2" fill="#FFFFFF" filter="url(#glow)">
+    <animate attributeName="r" values="2;3.8;2" dur="2.6s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.5;1;0.5" dur="2.6s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="600" cy="2" r="1.3" fill="#FFFFFF">
-    <animate attributeName="r" values="1.3;2.2;1.3" dur="2.6s" begin="0.9s" repeatCount="indefinite"/>
+  <circle cx="600" cy="3.5" r="2" fill="#FFFFFF" filter="url(#glow)">
+    <animate attributeName="r" values="2;3.8;2" dur="2.6s" begin="0.9s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.5;1;0.5" dur="2.6s" begin="0.9s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="960" cy="2" r="1.3" fill="#FFFFFF">
-    <animate attributeName="r" values="1.3;2.2;1.3" dur="2.6s" begin="1.8s" repeatCount="indefinite"/>
+  <circle cx="960" cy="3.5" r="2" fill="#FFFFFF" filter="url(#glow)">
+    <animate attributeName="r" values="2;3.8;2" dur="2.6s" begin="1.8s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.5;1;0.5" dur="2.6s" begin="1.8s" repeatCount="indefinite"/>
   </circle>
 </svg>

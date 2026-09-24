@@ -131,5 +131,5 @@ Grouped by category. Icons include hover titles for anyone unfamiliar with their
 </p>
 
 <div align="center">
-<img width="100%" src="assets/banners/footer-banner.svg" alt="" />
+<img width="100%" src="assets/banners/footer-banner(neural-net).svg" alt="" />
 </div>

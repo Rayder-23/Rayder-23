@@ -1,0 +1,472 @@
+<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="neural network pulse animation">
+  <style>
+    .bg { fill: #1a0f2e; }
+  </style>
+  <defs>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B6FC9" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#8B6FC9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pulseGlow0" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#C084FC" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pulseGlow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#A78BFA" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pulseGlow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E0A8FC" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#E0A8FC" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#E0A8FC" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pulseGlow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B794F6" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#B794F6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#B794F6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="bgTexture" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#2a1f45"/>
+    </pattern>
+    <path id="route0" d="M150.0,20.0 Q315.0,20.0 480.0,80.0 Q630.0,80.0 780.0,60.0 Q915.0,60.0 1050.0,20.0"/>
+    <path id="route1" d="M150.0,20.0 Q315.0,20.0 480.0,100.0 Q630.0,100.0 780.0,20.0 Q915.0,20.0 1050.0,100.0"/>
+    <path id="route2" d="M150.0,100.0 Q315.0,100.0 480.0,80.0 Q630.0,80.0 780.0,100.0 Q915.0,100.0 1050.0,100.0"/>
+    <path id="route3" d="M150.0,46.7 Q315.0,46.7 480.0,100.0 Q630.0,100.0 780.0,20.0 Q915.0,20.0 1050.0,100.0"/>
+    <path id="route4" d="M150.0,20.0 Q315.0,20.0 480.0,20.0 Q630.0,20.0 780.0,20.0 Q915.0,20.0 1050.0,20.0"/>
+    <path id="route5" d="M150.0,46.7 Q315.0,46.7 480.0,100.0 Q630.0,100.0 780.0,20.0 Q915.0,20.0 1050.0,60.0"/>
+    <path id="route6" d="M150.0,73.3 Q315.0,73.3 480.0,80.0 Q630.0,80.0 780.0,100.0 Q915.0,100.0 1050.0,20.0"/>
+    <path id="route7" d="M150.0,46.7 Q315.0,46.7 480.0,60.0 Q630.0,60.0 780.0,80.0 Q915.0,80.0 1050.0,20.0"/>
+    <path id="route8" d="M150.0,20.0 Q315.0,20.0 480.0,80.0 Q630.0,80.0 780.0,60.0 Q915.0,60.0 1050.0,60.0"/>
+    <path id="route9" d="M150.0,20.0 Q315.0,20.0 480.0,60.0 Q630.0,60.0 780.0,60.0 Q915.0,60.0 1050.0,20.0"/>
+    <path id="fwroute0" d="M150.0,20.0 Q315.0,20.0 480.0,100.0 Q630.0,100.0 780.0,100.0 Q915.0,100.0 1050.0,60.0"/>
+    <path id="fwroute1" d="M150.0,46.7 Q315.0,46.7 480.0,60.0 Q630.0,60.0 780.0,20.0 Q915.0,20.0 1050.0,60.0"/>
+    <path id="fwroute2" d="M150.0,73.3 Q315.0,73.3 480.0,20.0 Q630.0,20.0 780.0,80.0 Q915.0,80.0 1050.0,20.0"/>
+    <path id="fwroute3" d="M150.0,100.0 Q315.0,100.0 480.0,20.0 Q630.0,20.0 780.0,20.0 Q915.0,20.0 1050.0,20.0"/>
+    <clipPath id="clipAll"><rect x="0" y="0" width="1200" height="120"/></clipPath>
+  </defs>
+  <g clip-path="url(#clipAll)">
+    <rect class="bg" x="0" y="0" width="1200" height="120"/>
+    <rect x="0" y="0" width="1200" height="120" fill="url(#bgTexture)" opacity="0.5"/>
+    <g stroke="#4a3a6b" stroke-width="1" opacity="0.3" fill="none">
+      <path d="M150.0,20.0 Q315.0,20.0 480.0,20.0"/>
+      <path d="M150.0,20.0 Q315.0,20.0 480.0,40.0"/>
+      <path d="M150.0,20.0 Q315.0,20.0 480.0,60.0"/>
+      <path d="M150.0,20.0 Q315.0,20.0 480.0,80.0"/>
+      <path d="M150.0,20.0 Q315.0,20.0 480.0,100.0"/>
+      <path d="M150.0,46.7 Q315.0,46.7 480.0,20.0"/>
+      <path d="M150.0,46.7 Q315.0,46.7 480.0,40.0"/>
+      <path d="M150.0,46.7 Q315.0,46.7 480.0,60.0"/>
+      <path d="M150.0,46.7 Q315.0,46.7 480.0,80.0"/>
+      <path d="M150.0,46.7 Q315.0,46.7 480.0,100.0"/>
+      <path d="M150.0,73.3 Q315.0,73.3 480.0,20.0"/>
+      <path d="M150.0,73.3 Q315.0,73.3 480.0,40.0"/>
+      <path d="M150.0,73.3 Q315.0,73.3 480.0,60.0"/>
+      <path d="M150.0,73.3 Q315.0,73.3 480.0,80.0"/>
+      <path d="M150.0,73.3 Q315.0,73.3 480.0,100.0"/>
+      <path d="M150.0,100.0 Q315.0,100.0 480.0,20.0"/>
+      <path d="M150.0,100.0 Q315.0,100.0 480.0,40.0"/>
+      <path d="M150.0,100.0 Q315.0,100.0 480.0,60.0"/>
+      <path d="M150.0,100.0 Q315.0,100.0 480.0,80.0"/>
+      <path d="M150.0,100.0 Q315.0,100.0 480.0,100.0"/>
+      <path d="M480.0,20.0 Q630.0,20.0 780.0,20.0"/>
+      <path d="M480.0,20.0 Q630.0,20.0 780.0,40.0"/>
+      <path d="M480.0,20.0 Q630.0,20.0 780.0,60.0"/>
+      <path d="M480.0,20.0 Q630.0,20.0 780.0,80.0"/>
+      <path d="M480.0,20.0 Q630.0,20.0 780.0,100.0"/>
+      <path d="M480.0,40.0 Q630.0,40.0 780.0,20.0"/>
+      <path d="M480.0,40.0 Q630.0,40.0 780.0,40.0"/>
+      <path d="M480.0,40.0 Q630.0,40.0 780.0,60.0"/>
+      <path d="M480.0,40.0 Q630.0,40.0 780.0,80.0"/>
+      <path d="M480.0,40.0 Q630.0,40.0 780.0,100.0"/>
+      <path d="M480.0,60.0 Q630.0,60.0 780.0,20.0"/>
+      <path d="M480.0,60.0 Q630.0,60.0 780.0,40.0"/>
+      <path d="M480.0,60.0 Q630.0,60.0 780.0,60.0"/>
+      <path d="M480.0,60.0 Q630.0,60.0 780.0,80.0"/>
+      <path d="M480.0,60.0 Q630.0,60.0 780.0,100.0"/>
+      <path d="M480.0,80.0 Q630.0,80.0 780.0,20.0"/>
+      <path d="M480.0,80.0 Q630.0,80.0 780.0,40.0"/>
+      <path d="M480.0,80.0 Q630.0,80.0 780.0,60.0"/>
+      <path d="M480.0,80.0 Q630.0,80.0 780.0,80.0"/>
+      <path d="M480.0,80.0 Q630.0,80.0 780.0,100.0"/>
+      <path d="M480.0,100.0 Q630.0,100.0 780.0,20.0"/>
+      <path d="M480.0,100.0 Q630.0,100.0 780.0,40.0"/>
+      <path d="M480.0,100.0 Q630.0,100.0 780.0,60.0"/>
+      <path d="M480.0,100.0 Q630.0,100.0 780.0,80.0"/>
+      <path d="M480.0,100.0 Q630.0,100.0 780.0,100.0"/>
+      <path d="M780.0,20.0 Q915.0,20.0 1050.0,20.0"/>
+      <path d="M780.0,20.0 Q915.0,20.0 1050.0,60.0"/>
+      <path d="M780.0,20.0 Q915.0,20.0 1050.0,100.0"/>
+      <path d="M780.0,40.0 Q915.0,40.0 1050.0,20.0"/>
+      <path d="M780.0,40.0 Q915.0,40.0 1050.0,60.0"/>
+      <path d="M780.0,40.0 Q915.0,40.0 1050.0,100.0"/>
+      <path d="M780.0,60.0 Q915.0,60.0 1050.0,20.0"/>
+      <path d="M780.0,60.0 Q915.0,60.0 1050.0,60.0"/>
+      <path d="M780.0,60.0 Q915.0,60.0 1050.0,100.0"/>
+      <path d="M780.0,80.0 Q915.0,80.0 1050.0,20.0"/>
+      <path d="M780.0,80.0 Q915.0,80.0 1050.0,60.0"/>
+      <path d="M780.0,80.0 Q915.0,80.0 1050.0,100.0"/>
+      <path d="M780.0,100.0 Q915.0,100.0 1050.0,20.0"/>
+      <path d="M780.0,100.0 Q915.0,100.0 1050.0,60.0"/>
+      <path d="M780.0,100.0 Q915.0,100.0 1050.0,100.0"/>
+    </g>
+    <g>
+      <circle cx="150.0" cy="20.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3.0s" begin="3.05s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="150.0" cy="20.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;4.0;3.2" dur="3.0s" begin="3.05s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3.0s" begin="3.05s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="150.0" cy="46.7" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3.61s" begin="3.28s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="150.0" cy="46.7" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;4.39;3.2" dur="3.61s" begin="3.28s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3.61s" begin="3.28s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="150.0" cy="73.3" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3.09s" begin="1.43s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="150.0" cy="73.3" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;4.21;3.2" dur="3.09s" begin="1.43s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3.09s" begin="1.43s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="150.0" cy="100.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3.35s" begin="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="150.0" cy="100.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;3.94;3.2" dur="3.35s" begin="2.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3.35s" begin="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="480.0" cy="20.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4.25s" begin="1.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="480.0" cy="20.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;4.28;3.2" dur="4.25s" begin="1.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="4.25s" begin="1.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="480.0" cy="20.0" r="3.2" fill="#F3E8FF" opacity="0">
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="9.46s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="9.46s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="6.55s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="6.55s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="6.55s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="6.55s" fill="freeze" restart="whenNotActive"/>
+      </circle>
+      <circle cx="480.0" cy="40.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3.32s" begin="0.42s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="480.0" cy="40.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;3.95;3.2" dur="3.32s" begin="0.42s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3.32s" begin="0.42s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="480.0" cy="60.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4.04s" begin="0.22s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="480.0" cy="60.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;3.99;3.2" dur="4.04s" begin="0.22s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="4.04s" begin="0.22s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="480.0" cy="60.0" r="3.2" fill="#F3E8FF" opacity="0">
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="15.11s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="15.11s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="19.14s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="19.14s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="6.55s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="6.55s" fill="freeze" restart="whenNotActive"/>
+      </circle>
+      <circle cx="480.0" cy="80.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3.58s" begin="2.01s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="480.0" cy="80.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;4.0;3.2" dur="3.58s" begin="2.01s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3.58s" begin="2.01s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="480.0" cy="80.0" r="3.2" fill="#F3E8FF" opacity="0">
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="1.30s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="1.30s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="5.21s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="5.21s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="13.45s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="13.45s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="17.07s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="17.07s" fill="freeze" restart="whenNotActive"/>
+      </circle>
+      <circle cx="480.0" cy="100.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3.17s" begin="2.63s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="480.0" cy="100.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;4.22;3.2" dur="3.17s" begin="2.63s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3.17s" begin="2.63s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="480.0" cy="100.0" r="3.2" fill="#F3E8FF" opacity="0">
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="3.21s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="3.21s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="7.54s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="7.54s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="11.42s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="11.42s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="6.55s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="6.55s" fill="freeze" restart="whenNotActive"/>
+      </circle>
+      <circle cx="780.0" cy="20.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3.55s" begin="0.42s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="780.0" cy="20.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;4.01;3.2" dur="3.55s" begin="0.42s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3.55s" begin="0.42s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="780.0" cy="20.0" r="3.2" fill="#F3E8FF" opacity="0">
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="4.11s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="4.11s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="8.44s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="8.44s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="10.36s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="10.36s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="12.32s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="12.32s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="7.10s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="7.10s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="7.10s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="7.10s" fill="freeze" restart="whenNotActive"/>
+      </circle>
+      <circle cx="780.0" cy="40.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4.26s" begin="0.97s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="780.0" cy="40.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;4.3;3.2" dur="4.26s" begin="0.97s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="4.26s" begin="0.97s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="780.0" cy="60.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4.15s" begin="1.09s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="780.0" cy="60.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;4.01;3.2" dur="4.15s" begin="1.09s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="4.15s" begin="1.09s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="780.0" cy="60.0" r="3.2" fill="#F3E8FF" opacity="0">
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="2.20s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="2.20s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="17.97s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="17.97s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="20.04s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="20.04s" fill="freeze" restart="whenNotActive"/>
+      </circle>
+      <circle cx="780.0" cy="80.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4.11s" begin="1.42s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="780.0" cy="80.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;4.22;3.2" dur="4.11s" begin="1.42s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="4.11s" begin="1.42s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="780.0" cy="80.0" r="3.2" fill="#F3E8FF" opacity="0">
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="16.01s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="16.01s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="7.10s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="7.10s" fill="freeze" restart="whenNotActive"/>
+      </circle>
+      <circle cx="780.0" cy="100.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4.29s" begin="0.36s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="780.0" cy="100.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;4.01;3.2" dur="4.29s" begin="0.36s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="4.29s" begin="0.36s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="780.0" cy="100.0" r="3.2" fill="#F3E8FF" opacity="0">
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="6.11s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="6.11s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="14.35s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="14.35s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="7.10s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="7.10s" fill="freeze" restart="whenNotActive"/>
+      </circle>
+      <circle cx="1050.0" cy="20.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4.0s" begin="0.93s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1050.0" cy="20.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;4.06;3.2" dur="4.0s" begin="0.93s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="4.0s" begin="0.93s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1050.0" cy="20.0" r="3.2" fill="#F3E8FF" opacity="0">
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="3.10s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="3.10s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="11.26s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="11.26s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="15.25s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="15.25s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="16.91s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="16.91s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="20.94s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="20.94s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="7.65s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="7.65s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="7.65s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="7.65s" fill="freeze" restart="whenNotActive"/>
+      </circle>
+      <circle cx="1050.0" cy="60.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3.1s" begin="1.07s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1050.0" cy="60.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;3.95;3.2" dur="3.1s" begin="1.07s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3.1s" begin="1.07s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1050.0" cy="60.0" r="3.2" fill="#F3E8FF" opacity="0">
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="13.22s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="13.22s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="18.87s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="18.87s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="7.65s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="7.65s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="7.65s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="7.65s" fill="freeze" restart="whenNotActive"/>
+      </circle>
+      <circle cx="1050.0" cy="100.0" r="9" fill="url(#nodeGlow)">
+        <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3.32s" begin="2.1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1050.0" cy="100.0" r="3.2" fill="#4a3a6b">
+        <animate attributeName="r" values="3.2;4.2;3.2" dur="3.32s" begin="2.1s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3.32s" begin="2.1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1050.0" cy="100.0" r="3.2" fill="#F3E8FF" opacity="0">
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="5.01s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="5.01s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="7.01s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="7.01s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="r" values="3.2;4.48;3.2" keyTimes="0;0.35;1" dur="0.6s" begin="9.34s" fill="freeze" restart="whenNotActive"/>
+        <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.3;1" dur="0.6s" begin="9.34s" fill="freeze" restart="whenNotActive"/>
+      </circle>
+    </g>
+    <g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.85;1" dur="2.7s" begin="0.4s" repeatCount="indefinite"/>
+        <circle r="7" fill="url(#pulseGlow0)">
+          <animateMotion dur="2.7s" begin="0.4s" repeatCount="indefinite"><mpath href="#route0"/></animateMotion>
+        </circle>
+        <circle r="2.1" fill="#EDE0FF">
+          <animateMotion dur="2.7s" begin="0.4s" repeatCount="indefinite"><mpath href="#route0"/></animateMotion>
+        </circle>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.85;1" dur="2.7s" begin="2.31s" repeatCount="indefinite"/>
+        <circle r="7" fill="url(#pulseGlow1)">
+          <animateMotion dur="2.7s" begin="2.31s" repeatCount="indefinite"><mpath href="#route1"/></animateMotion>
+        </circle>
+        <circle r="2.1" fill="#E6DFFF">
+          <animateMotion dur="2.7s" begin="2.31s" repeatCount="indefinite"><mpath href="#route1"/></animateMotion>
+        </circle>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.85;1" dur="2.7s" begin="4.31s" repeatCount="indefinite"/>
+        <circle r="7" fill="url(#pulseGlow2)">
+          <animateMotion dur="2.7s" begin="4.31s" repeatCount="indefinite"><mpath href="#route2"/></animateMotion>
+        </circle>
+        <circle r="2.1" fill="#FBEBFF">
+          <animateMotion dur="2.7s" begin="4.31s" repeatCount="indefinite"><mpath href="#route2"/></animateMotion>
+        </circle>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.85;1" dur="2.7s" begin="6.64s" repeatCount="indefinite"/>
+        <circle r="7" fill="url(#pulseGlow3)">
+          <animateMotion dur="2.7s" begin="6.64s" repeatCount="indefinite"><mpath href="#route3"/></animateMotion>
+        </circle>
+        <circle r="2.1" fill="#EAE0FF">
+          <animateMotion dur="2.7s" begin="6.64s" repeatCount="indefinite"><mpath href="#route3"/></animateMotion>
+        </circle>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.85;1" dur="2.7s" begin="8.56s" repeatCount="indefinite"/>
+        <circle r="7" fill="url(#pulseGlow0)">
+          <animateMotion dur="2.7s" begin="8.56s" repeatCount="indefinite"><mpath href="#route4"/></animateMotion>
+        </circle>
+        <circle r="2.1" fill="#EDE0FF">
+          <animateMotion dur="2.7s" begin="8.56s" repeatCount="indefinite"><mpath href="#route4"/></animateMotion>
+        </circle>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.85;1" dur="2.7s" begin="10.52s" repeatCount="indefinite"/>
+        <circle r="7" fill="url(#pulseGlow1)">
+          <animateMotion dur="2.7s" begin="10.52s" repeatCount="indefinite"><mpath href="#route5"/></animateMotion>
+        </circle>
+        <circle r="2.1" fill="#E6DFFF">
+          <animateMotion dur="2.7s" begin="10.52s" repeatCount="indefinite"><mpath href="#route5"/></animateMotion>
+        </circle>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.85;1" dur="2.7s" begin="12.55s" repeatCount="indefinite"/>
+        <circle r="7" fill="url(#pulseGlow2)">
+          <animateMotion dur="2.7s" begin="12.55s" repeatCount="indefinite"><mpath href="#route6"/></animateMotion>
+        </circle>
+        <circle r="2.1" fill="#FBEBFF">
+          <animateMotion dur="2.7s" begin="12.55s" repeatCount="indefinite"><mpath href="#route6"/></animateMotion>
+        </circle>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.85;1" dur="2.7s" begin="14.21s" repeatCount="indefinite"/>
+        <circle r="7" fill="url(#pulseGlow3)">
+          <animateMotion dur="2.7s" begin="14.21s" repeatCount="indefinite"><mpath href="#route7"/></animateMotion>
+        </circle>
+        <circle r="2.1" fill="#EAE0FF">
+          <animateMotion dur="2.7s" begin="14.21s" repeatCount="indefinite"><mpath href="#route7"/></animateMotion>
+        </circle>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.85;1" dur="2.7s" begin="16.17s" repeatCount="indefinite"/>
+        <circle r="7" fill="url(#pulseGlow0)">
+          <animateMotion dur="2.7s" begin="16.17s" repeatCount="indefinite"><mpath href="#route8"/></animateMotion>
+        </circle>
+        <circle r="2.1" fill="#EDE0FF">
+          <animateMotion dur="2.7s" begin="16.17s" repeatCount="indefinite"><mpath href="#route8"/></animateMotion>
+        </circle>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.85;1" dur="2.7s" begin="18.24s" repeatCount="indefinite"/>
+        <circle r="7" fill="url(#pulseGlow1)">
+          <animateMotion dur="2.7s" begin="18.24s" repeatCount="indefinite"><mpath href="#route9"/></animateMotion>
+        </circle>
+        <circle r="2.1" fill="#E6DFFF">
+          <animateMotion dur="2.7s" begin="18.24s" repeatCount="indefinite"><mpath href="#route9"/></animateMotion>
+        </circle>
+      </g>
+    </g>
+    <g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.23077;0.23462;0.29038;0.29423;1" dur="26.0s" begin="0s" repeatCount="indefinite"/>
+        <circle r="8" fill="url(#pulseGlow2)">
+          <animateMotion dur="1.6500000000000001s" begin="6.0s;32.0s" repeatCount="indefinite"><mpath href="#fwroute0"/></animateMotion>
+        </circle>
+        <circle r="2.4" fill="#FBEBFF">
+          <animateMotion dur="1.6500000000000001s" begin="6.0s;32.0s" repeatCount="indefinite"><mpath href="#fwroute0"/></animateMotion>
+        </circle>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.23077;0.23462;0.29038;0.29423;1" dur="26.0s" begin="0s" repeatCount="indefinite"/>
+        <circle r="8" fill="url(#pulseGlow3)">
+          <animateMotion dur="1.6500000000000001s" begin="6.0s;32.0s" repeatCount="indefinite"><mpath href="#fwroute1"/></animateMotion>
+        </circle>
+        <circle r="2.4" fill="#EAE0FF">
+          <animateMotion dur="1.6500000000000001s" begin="6.0s;32.0s" repeatCount="indefinite"><mpath href="#fwroute1"/></animateMotion>
+        </circle>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.23077;0.23462;0.29038;0.29423;1" dur="26.0s" begin="0s" repeatCount="indefinite"/>
+        <circle r="8" fill="url(#pulseGlow0)">
+          <animateMotion dur="1.6500000000000001s" begin="6.0s;32.0s" repeatCount="indefinite"><mpath href="#fwroute2"/></animateMotion>
+        </circle>
+        <circle r="2.4" fill="#EDE0FF">
+          <animateMotion dur="1.6500000000000001s" begin="6.0s;32.0s" repeatCount="indefinite"><mpath href="#fwroute2"/></animateMotion>
+        </circle>
+      </g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.23077;0.23462;0.29038;0.29423;1" dur="26.0s" begin="0s" repeatCount="indefinite"/>
+        <circle r="8" fill="url(#pulseGlow1)">
+          <animateMotion dur="1.6500000000000001s" begin="6.0s;32.0s" repeatCount="indefinite"><mpath href="#fwroute3"/></animateMotion>
+        </circle>
+        <circle r="2.4" fill="#E6DFFF">
+          <animateMotion dur="1.6500000000000001s" begin="6.0s;32.0s" repeatCount="indefinite"><mpath href="#fwroute3"/></animateMotion>
+        </circle>
+      </g>
+    </g>
+  </g>
+</svg>
