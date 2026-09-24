@@ -4,6 +4,19 @@ https://dashboardicons.com
 - Capsule Render:
 https://capsule-render.vercel.app
 
+    - Header:
+    <div align="center">
+    <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,100:C084FC&height=200&section=header&text=%22When%20in%20doubt%2C%20go%20flat%20out.%22&fontSize=34&fontColor=ffffff&fontAlignY=38&desc=—%20Colin%20McRae&descAlignY=56&descSize=18&animation=fadeIn" />
+    </div>
+
+    - Divider:
+    <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:7C3AED,100:C084FC&height=3" />
+
+    - Footer:
+    <div align="center">
+    <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,100:C084FC&height=120&section=footer" />
+    </div>
+
 - Gitsnk:
 https://github.com/Platane/snk
 https://platane.github.io/snk/

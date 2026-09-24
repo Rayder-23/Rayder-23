@@ -1,5 +1,5 @@
 <div align="center">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,100:C084FC&height=200&section=header&text=%22When%20in%20doubt%2C%20go%20flat%20out.%22&fontSize=34&fontColor=ffffff&fontAlignY=38&desc=—%20Colin%20McRae&descAlignY=56&descSize=18&animation=fadeIn" />
+<img width="100%" src="assets/banners/header-banner(rally-stage).svg" alt="When in doubt, go flat out. — Colin McRae" />
 </div>
 
 ## Introduction
@@ -8,7 +8,7 @@
 - My background is primarily self-taught, supported by structured courses that helped establish a solid technical foundation.
 - Currently exploring **KSoR** and **Flutter**, because broadening one’s tooling ecosystem tends to accelerate both capability and confusion in equal measure.
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:7C3AED,100:C084FC&height=3" />
+<img width="100%" src="assets/banners/divider.svg" alt="" />
 
 ## Stack
 
@@ -100,7 +100,7 @@ Grouped by category. Icons include hover titles for anyone unfamiliar with their
 <img title="Microsoft PowerPoint" src="assets/icons/microsoft-powerpoint.svg" width="42" />
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:7C3AED,100:C084FC&height=3" />
+<img width="100%" src="assets/banners/divider.svg" alt="" />
 
 ## Published Work
 
@@ -116,7 +116,7 @@ Grouped by category. Icons include hover titles for anyone unfamiliar with their
 </a>
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:7C3AED,100:C084FC&height=3" />
+<img width="100%" src="assets/banners/divider.svg" alt="" />
 
 ## Contact
 
@@ -131,5 +131,5 @@ Grouped by category. Icons include hover titles for anyone unfamiliar with their
 </p>
 
 <div align="center">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7C3AED,100:C084FC&height=120&section=footer" />
+<img width="100%" src="assets/banners/footer-banner.svg" alt="" />
 </div>
