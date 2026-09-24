@@ -1,0 +1,56 @@
+<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="footer banner">
+  <style>
+    .bg { fill: url(#bgGrad); }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: url(#bgGradDark); }
+    }
+    .flag { opacity: 0.16; }
+  </style>
+
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+    <linearGradient id="bgGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5B21B6"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+    <linearGradient id="sweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="none"/>
+      <rect width="8" height="8" fill="#FFFFFF"/>
+      <rect x="8" y="8" width="8" height="8" fill="#FFFFFF"/>
+    </pattern>
+    <clipPath id="clipAll">
+      <rect x="0" y="0" width="1200" height="120"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clipAll)">
+    <rect class="bg" x="0" y="0" width="1200" height="120"/>
+
+    <g class="flag">
+      <rect x="1080" y="80" width="120" height="40" fill="url(#checker)"/>
+    </g>
+    <g class="flag">
+      <rect x="0" y="0" width="120" height="40" fill="url(#checker)"/>
+    </g>
+
+    <!-- continuous speed-line sweep, SMIL-driven -->
+    <g transform="skewX(-20)">
+      <rect x="-220" y="0" width="180" height="120" fill="url(#sweepGrad)" opacity="0">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0; 1620 0; 1620 0" keyTimes="0; 0.55; 1"
+          dur="7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity"
+          values="0; 0.35; 0.35; 0; 0" keyTimes="0; 0.08; 0.45; 0.55; 1"
+          dur="7s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+</svg>

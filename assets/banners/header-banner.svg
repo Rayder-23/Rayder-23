@@ -1,0 +1,92 @@
+<svg viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="When in doubt, go flat out. — Colin McRae">
+  <style>
+    :root { color-scheme: light dark; }
+    .bg { fill: url(#bgGrad); }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: url(#bgGradDark); }
+    }
+    .title, .subtitle {
+      font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      fill: #FFFFFF;
+      text-anchor: middle;
+      opacity: 0;
+      animation: reveal 0.9s ease-out 0.15s forwards;
+    }
+    .subtitle { animation-delay: 0.4s; }
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .flag { opacity: 0.16; }
+    @media (prefers-reduced-motion: reduce) {
+      .title, .subtitle { animation: none; opacity: 1; }
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+    <linearGradient id="bgGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5B21B6"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+    <linearGradient id="sweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="none"/>
+      <rect width="8" height="8" fill="#FFFFFF"/>
+      <rect x="8" y="8" width="8" height="8" fill="#FFFFFF"/>
+    </pattern>
+    <clipPath id="clipAll">
+      <rect x="0" y="0" width="1200" height="200"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clipAll)">
+    <rect class="bg" x="0" y="0" width="1200" height="200"/>
+
+    <!-- subtle checkered-flag corner motif -->
+    <g class="flag">
+      <rect x="1080" y="150" width="120" height="50" fill="url(#checker)"/>
+    </g>
+    <g class="flag">
+      <rect x="0" y="0" width="120" height="50" fill="url(#checker)"/>
+    </g>
+
+    <!-- continuous speed-line sweep, driven by SMIL so it keeps animating
+         reliably inside GitHub's sandboxed <img> embedding -->
+    <g transform="skewX(-20)">
+      <rect x="-220" y="0" width="180" height="200" fill="url(#sweepGrad)" opacity="0">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0; 1620 0; 1620 0" keyTimes="0; 0.55; 1"
+          dur="7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity"
+          values="0; 0.35; 0.35; 0; 0" keyTimes="0; 0.08; 0.45; 0.55; 1"
+          dur="7s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- data-science nod: faint node cluster, static, minimal -->
+    <g opacity="0.5">
+      <circle cx="1015" cy="60" r="2.5" fill="#FFFFFF"/>
+      <circle cx="1040" cy="80" r="2.5" fill="#FFFFFF"/>
+      <circle cx="1070" cy="55" r="2.5" fill="#FFFFFF"/>
+      <circle cx="1095" cy="75" r="2.5" fill="#FFFFFF"/>
+      <line x1="1015" y1="60" x2="1040" y2="80" stroke="#FFFFFF" stroke-width="1"/>
+      <line x1="1040" y1="80" x2="1070" y2="55" stroke="#FFFFFF" stroke-width="1"/>
+      <line x1="1070" y1="55" x2="1095" y2="75" stroke="#FFFFFF" stroke-width="1"/>
+      <circle cx="1070" cy="55" r="2.5" fill="#FFFFFF">
+        <animate attributeName="r" values="2.5;3.6;2.5" dur="2.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <text class="title" x="600" y="100" font-size="34" font-weight="700">When in doubt, go flat out.</text>
+    <text class="subtitle" x="600" y="132" font-size="18" font-weight="400" fill-opacity="0.9">— Colin McRae</text>
+  </g>
+</svg>
